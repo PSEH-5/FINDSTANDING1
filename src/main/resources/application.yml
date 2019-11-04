@@ -1,0 +1,18 @@
+spring:
+	profiles: default
+server:
+	port: 8080	
+logging:
+  level:
+    org.springframework: ERROR
+    com.findstanding: INFO
+country
+	url: https://apiv2.apifootball.com/?action=get_countries&APIkey={apiKey}
+country:
+	league:
+		url: https://apiv2.apifootball.com/?action=get_leagues&country_id={countryId}&APIkey={apiKey}
+standing:
+	url: https://apiv2.apifootball.com/?action=get_standings&league_id={leagueId}&APIkey={apiKey}
+	
+	api:
+		key: 9bb66184e0c8145384fd2cc0f7b914ada57b4e8fd2e4d6d586adcc27c257a978
